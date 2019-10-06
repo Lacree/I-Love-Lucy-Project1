@@ -39,5 +39,9 @@ class Connect4 {
       const $lastEmptyCell = findLastEmptyCell(col);
       $lastEmptyCell.addClass("next-red");
     });
+
+    $board.on("mouseleave", ".col", function() {
+      $(".col").removeClass("next-red");
+    });
   }
 }
