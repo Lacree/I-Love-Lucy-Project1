@@ -49,11 +49,31 @@ class Connect4 {
 
     $board.on("click", ".col.empty", function() {
       const col = $(this).data("col");
+      const row = $(this).data("row");
       const $lastEmptyCell = findLastEmptyCell(col);
       $lastEmptyCell.removeClass(`empty next-${that.player}`);
       $lastEmptyCell.addClass(that.player);
+
+      const winner = that.checkForWinner(row, col);
+      if (winner) {
+        alert(`You Win! Player ${that.player} has won!`);
+        return;
+      }
+
       that.player = that.player === "red" ? "black" : "red";
       $(this).trigger("mouseenter");
     });
+  }
+  checkForWinner(row, col) {
+    const that = this;
+    function checkWin(directionA, directionB) {
+      const total = 1 + checkDirection(a) + checkDirection(b);
+    }
+
+    function checkVerticals() {
+      return checkWin({ i: -1, j: 0 }, { i: 1, j: 0 });
+    }
+
+    return checkVerticals();
   }
 }
