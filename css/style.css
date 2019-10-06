@@ -16,6 +16,21 @@ body {
   border-radius: 50%;
   margin: 5px;
 }
+
+.col.emppty {
+  cursor: pointer;
+}
 .next-red {
   background-color: rgba(255, 0, 0, 0.2);
+}
+
+.col.red {
+  background-color: red;
+}
+
+.col.black {
+  background-color: black;
+}
+.next-black {
+  background-color: rgba(255, 255, 255, 0.2);
 }
