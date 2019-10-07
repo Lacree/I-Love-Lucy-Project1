@@ -11,6 +11,7 @@ class Connect4 {
 
   createGrid() {
     const $board = $(this.selector);
+    $board.empty();
     this.isGameOver = false;
     this.player = 'red';
 
