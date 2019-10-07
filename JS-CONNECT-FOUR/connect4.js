@@ -13,6 +13,7 @@ class Connect4 {
     const $board = $(this.selector);
     this.isGameOver = false;
     this.player = 'red';
+
     for (let row = 0; row < this.ROWS; row++) {
       const $row = $('<div>').addClass('row');
       for (let col = 0; col < this.COLS; col++) {
@@ -67,6 +68,7 @@ class Connect4 {
       if (winner) {
         that.isGameOver = true;
         alert(`Game End! Player ${that.player} has won!`);
+        $('.col.empty').removeClass('empty');
         return;
       }
 
@@ -136,4 +138,6 @@ class Connect4 {
   restart() {
     this.createGrid();
   }
+
+
 }
