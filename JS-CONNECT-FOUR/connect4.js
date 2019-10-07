@@ -11,6 +11,8 @@ class Connect4 {
 
   createGrid() {
     const $board = $(this.selector);
+    this.isGameOver = false;
+    this.player = 'red';
     for (let row = 0; row < this.ROWS; row++) {
       const $row = $('<div>').addClass('row');
       for (let col = 0; col < this.COLS; col++) {
@@ -130,5 +132,8 @@ class Connect4 {
       checkHorizontals() ||
       checkDiagonalBLtoTR() ||
       checkDiagonalTLtoBR();
+  }
+  restart() {
+    this.createGrid();
   }
 }
