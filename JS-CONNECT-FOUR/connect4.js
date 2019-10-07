@@ -1,3 +1,5 @@
+//Help and Codes provided by Cody Siebert GitHub Link :https://github.com/codyseibert/js-connect-four
+
 class Connect4 {
   constructor(selector) {
     this.ROWS = 6;
