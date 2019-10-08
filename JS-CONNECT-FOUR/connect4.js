@@ -71,6 +71,7 @@ class Connect4 {
       if (winner) {
         that.isGameOver = true;
         alert(`Game End! Player ${that.player} has won!`);
+        setTimeout(function () { alert; }, 1000);
         $('.col.empty').removeClass('empty');
         return;
       }
