@@ -3,9 +3,8 @@ body {
   justify-content: center;
   text-align: center;
   background: url('http://static1.squarespace.com/static/57856deee58c62418fa4beb3/578570368419c25970a7f1d4/5807671febbd1a790b788af4/1476970191840/I-LOVE-LUCY-banner.jpg?format=1500w');
-  background-size: 300px;
+  background-size: contain;
   margin: auto;
-  
 }
 
 #connect4 {
@@ -43,7 +42,8 @@ body {
 
 h1{
   margin: 50px;
-  padding: 40px;
+  padding: 20px;
+  height: 30px;
   background-color: pink;
   display: block;
   text-align: center;
@@ -54,6 +54,7 @@ img{
  margin: auto;
  display: block;
  justify-content: space-between;
+ height: 170px;
 
 }
 
