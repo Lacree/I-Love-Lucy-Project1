@@ -1,6 +1,6 @@
 body {
   background-color: #4e555a;
-  text-align: center;
+  
 }
 
 #connect4 {
@@ -36,7 +36,11 @@ body {
 }
 
 h1{
-  display: flexbox;
-  justify-content: center;
+  display: block;
+  text-align: center;
+}
+
+img{
+ text-align: center;
 }
 
