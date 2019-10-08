@@ -2,8 +2,8 @@ body {
   display: flexbox;
   justify-content: center;
   text-align: center;
-  background-image: url('https://images.app.goo.gl/UPVfQVAvu6urJTFD7');
-  background-color: #cccccc;
+  background: url('http://dash.ga.co/assets/anna-bg.png');
+
 }
 
 #connect4 {
