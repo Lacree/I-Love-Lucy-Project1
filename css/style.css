@@ -1,18 +1,22 @@
 body {
-  background-color: #4e555a;
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  background-image: url('https://images.app.goo.gl/UPVfQVAvu6urJTFD7');
   
 }
 
 #connect4 {
-  background-color: grey;
+  background-color: rgb(190, 126, 137);
   display: inline-block;
+  justify-content: space-between;
 }
 
 .col {
   width: 70px;
   height: 70px;
   display: inline-block;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   margin: 5px;
 }
@@ -36,11 +40,24 @@ body {
 }
 
 h1{
+  background-color: pink;
   display: block;
   text-align: center;
+  font-family: cursive;
 }
 
 img{
- text-align: center;
+ margin: auto;
+ display: block;
+ justify-content: space-between;
+
 }
 
+#restart{
+background-color: black;
+color: pink;
+display: inline-flexbox;
+justify-content: center;
+margin: 15px;
+text-align: center;
+}
